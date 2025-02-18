@@ -42,9 +42,13 @@ int main(){
     
     //Cadastro estado A
 
-    printf("               SUPER TRUNFO\n\n");
-    printf("Vamos iniciar o cadastro das cartas do jogo\n");
-    printf("Será um total de 8 estados e 24 cidades\n\n");
+    printf("            *** SUPER TRUNFO ***\n\n");
+    printf("Vamos iniciar o cadastro das cartas do jogo\n\n");
+    printf("Essa etapa é muito importante e pesso que tenham bastante atenção no preenchimento \n");
+    printf("As etapas do cadastro serão um total de 8 estados com 4 cidades cada, conforme srá pedido.\n");
+    printf("Se possivel antes de iniciar essa etapa faça um rascunho com todos os dados para evitar erros de digitação.\n");
+    printf("Contendo a escolha de um pais, 8 estados desse pais e 4 cidades de cada estado.\n");
+    printf("Para as caracteristicas das cidades tem população, área, PIB, quantidade de pontos turisticos.\n\n");
 
     printf("Cadastro 1/32\n");
 
