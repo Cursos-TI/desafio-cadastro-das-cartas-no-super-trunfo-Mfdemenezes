@@ -14,7 +14,7 @@ int main(){
     
     char estadoA[50], estadoB[50], estadoC[50], estadoD[50], estadoE[50], estadoF[50], estadoG[50], estadoH[50];
 
-    char estA = "A0", estB = "B0", estC = "C0", estD = "D0", estE = "E0", estF = "F0", estG  = "G0", estH = "H0";
+    char estA[50] = "A0", estB[50] = "B0", estC[50] = "C0", estD[50] = "D0", estE[50] = "E0", estF[50] = "F0", estG[50]  = "G0", estH[50] = "H0";
     
     char cidadeA01[50], cidadeA02[50], cidadeA03[50], cidadeA04[50], cidadeB01[50], cidadeB02[50], cidadeB03[50], cidadeB04[50], cidadeC01[50], cidadeC02[50], cidadeC03[50], cidadeC04[50], cidadeD01[50], cidadeD02[50], cidadeD03[50], cidadeD04[50];
     char cidadeE01[50], cidadeE02[50], cidadeE03[50], cidadeE04[50], cidadeF01[50], cidadeF02[50], cidadeF03[50], cidadeF04[50], cidadeG01[50], cidadeG02[50],cidadeG03[50], cidadeG04[50], cidadeH01[50], cidadeH02[50], cidadeH03[50], cidadeH04[50];
@@ -27,6 +27,10 @@ int main(){
     int pibA01, pibA02, pibA03, pibA04, pibB01, pibB02, pibB03, pibB04, pibC01, pibC02, pibC03, pibC04, pibD01, pibD02, pibD03, pibD04, pibE01, pibE02, pibE03, pibE04, pibF01, pibF02, pibF03, pibF04, pibG01, pibG02, pibG03, pibG04, pibH01, pibH02, pibH03, pibH04;
     
     int pontoA01, pontoA02, pontoA03, pontoA04, pontoB01, pontoB02, pontoB03, pontoB04, pontoC01, pontoC02, pontoC03, pontoC04, pontoD01, pontoD02, pontoD03, pontoD04, pontoE01, pontoE02, pontoE03, pontoE04, pontoF01, pontoF02, pontoF03, pontoF04, pontoG01, pontoG02, pontoG03, pontoG04, pontoH01, pontoH02, pontoH03, pontoH04;
+
+    float dpA01, dpA02, dpA03, dpA04, dpB01, dpB02, dpB03, dpB04, dpC01, dpC02, dpC03, dpC04, dpD01, dpD02, dpD03, dpD04, dpE01, dpE02, dpE03, dpE04, dpF01, dpF02, dpF03, dpF04, dpG01, dpG02, dpG03, dpG04, dpH01, dpH02, dpH03, dpH04;
+	
+    float pcA01, pcA02, pcA03, pcA04, pcB01, pcB02, pcB03, pcB04, pcC01, pcC02, pcC03, pcC04, pcD01, pcD02, pcD03, pcD04, pcE01, pcE02, pcE03, pcE04, pcF01, pcF02, pcF03, pcF04, pcG01, pcG02, pcG03, pcG04, pcH01, pcH02, pcH03, pcH04;
 
 
         
@@ -1094,6 +1098,80 @@ int main(){
     printf("PIB da cidade: %d\n", pibH04);
     printf("Número de pontos turisticos: %d\n\n", pontoH04);
 
+    
+    //Calculos dos dados das cartas
+
+    dpA01 = (float) populacaoA01 / areaA01;
+    dpA02 = (float) populacaoA02 / areaA02; 
+    dpA03 = (float) populacaoA03 / areaA03;
+    dpA04 = (float) populacaoA04 / areaA04;
+    dpB01 = (float) populacaoB01 / areaB01;
+    dpB02 = (float) populacaoB02 / areaB02;
+    dpB03 = (float) populacaoB03 / areaB03;
+    dpB04 = (float) populacaoB04 / areaB04;
+    dpC01 = (float) populacaoC01 / areaC01;
+    dpC02 = (float) populacaoC02 / areaC02;
+    dpC03 = (float) populacaoC03 / areaC03;
+    dpC04 = (float) populacaoC04 / areaC04;
+    dpD01 = (float) populacaoD01 / areaD01;
+    dpD02 = (float) populacaoD02 / areaD02;
+    dpD03 = (float) populacaoD03 / areaD03;
+    dpD04 = (float) populacaoD04 / areaD04;
+    dpE01 = (float) populacaoE01 / areaE01;
+    dpE02 = (float) populacaoE02 / areaE02;
+    dpE03 = (float) populacaoE03 / areaE03;
+    dpE04 = (float) populacaoE04 / areaE04;
+    dpF01 = (float) populacaoF01 / areaF01;
+    dpF02 = (float) populacaoF02 / areaF02;
+    dpF03 = (float) populacaoF03 / areaF03;
+    dpF04 = (float) populacaoF04 / areaF04;
+    dpG01 = (float) populacaoG01 / areaG01;
+    dpG02 = (float) populacaoG02 / areaG02;
+    dpG03 = (float) populacaoG03 / areaG03;
+    dpG04 = (float) populacaoG04 / areaG04;
+    dpH01 = (float) populacaoH01 / areaH01;
+    dpH02 = (float) populacaoH02 / areaH02;
+    dpH03 = (float) populacaoH03 / areaH03;
+    dpH04 = (float) populacaoH04 / areaH04;
+
+    
+    pcA01 = (float) pibA01 / populacaoA01;
+    pcA02 = (float) pibA02 / populacaoA02; 
+    pcA03 = (float) pibA03 / populacaoA03;
+    pcA04 = (float) pibA04 / populacaoA04;
+    pcB01 = (float) pibB01 / populacaoB01;
+    pcB02 = (float) pibB02 / populacaoB02;
+    pcB03 = (float) pibB03 / populacaoB03;
+    pcB04 = (float) pibB04 / populacaoB04;
+    pcC01 = (float) pibC01 / populacaoC01;
+    pcC02 = (float) pibC02 / populacaoC02;
+    pcC03 = (float) pibC03 / populacaoC03;
+    pcC04 = (float) pibC04 / populacaoC04;
+    pcD01 = (float) pibD01 / populacaoD01;
+    pcD02 = (float) pibD02 / populacaoD02;
+    pcD03 = (float) pibD03 / populacaoD03;
+    pcD04 = (float) pibD04 / populacaoD04;
+    pcE01 = (float) pibE01 / populacaoE01;
+    pcE02 = (float) pibE02 / populacaoE02;
+    pcE03 = (float) pibE03 / populacaoE03;
+    pcE04 = (float) pibE04 / populacaoE04;
+    pcF01 = (float) pibF01 / populacaoF01;
+    pcF02 = (float) pibF02 / populacaoF02;
+    pcF03 = (float) pibF03 / populacaoF03;
+    pcF04 = (float) pibF04 / populacaoF04;
+    pcG01 = (float) pibG01 / populacaoG01;
+    pcG02 = (float) pibG02 / populacaoG02;
+    pcG03 = (float) pibG03 / populacaoG03;
+    pcG04 = (float) pibG04 / populacaoG04;
+    pcH01 = (float) pibH01 / populacaoH01;
+    pcH02 = (float) pibH02 / populacaoH02;
+    pcH03 = (float) pibH03 / populacaoH03;
+    pcH04 = (float) pibH04 / populacaoH04;
+
+   
+     
+    
+       
     // Exibição dos Dados das Cartas:
    
 
@@ -1112,29 +1190,36 @@ int main(){
     printf("Área em metros quadrados: %d\n", areaA01);
     printf("PIB da cidade:R$ %d\n", pibA01);
     printf("Número de pontos turisticos: %d\n\n\n", pontoA01);
-    
+    printf("Densidade populacional: %.2f\n", dpA01);
+    printf("PIB per capta: %.2f\n", pcA01);
+
     printf("Código da carta: %s%d\n", estA, carta2);
     printf("Cidade: %s\n", cidadeA02);
     printf("População: %d\n", populacaoA02);
     printf("Área em metros quadrados: %.2d m2\n", areaA02);
     printf("PIB da cidade:R$ %d\n", pibA02);
     printf("Número de pontos turisticos: %d\n\n\n", pontoA02);
-    
+    printf("Densidade populacional: %.2f\n", dpA02);
+    printf("PIB per capta: %.2f\n", pcA02);
+
     printf("Código da carta: %s%d\n", estA, carta3);
     printf("Cidade: %s\n", cidadeA03);
     printf("População: %d\n", populacaoA03);
     printf("Área em metros quadrados: %.2d m2\n", areaA03);
     printf("PIB da cidade:R$ %d\n", pibA03);
     printf("Número de pontos turisticos: %d\n\n\n", pontoA03);
-    
+    printf("Densidade populacional: %.2f\n", dpA03);
+    printf("PIB per capta: %.2f\n", pcA03);
+
     printf("Código da carta: %s%d\n", estA, carta4);
     printf("Cidade: %s\n", cidadeA04);
     printf("População: %d\n", populacaoA04);
     printf("Área em metros quadrados: %.2d m2\n", areaA04);
     printf("PIB da cidade:R$ %d\n", pibA04);
     printf("Número de pontos turisticos: %d\n\n\n", pontoA04);
-    
-    
+    printf("Densidade populacional: %.2f\n", dpA04);
+    printf("PIB per capta: %.2f\n", pcA04);
+
     printf("Estado: %s\n\n", estadoB);
 
     printf("Código da carta: %s%d\n", estB, carta1);
@@ -1144,7 +1229,8 @@ int main(){
     printf("Área em metros quadrados: %.2d m2\n", areaB01);
     printf("PIB da cidade:R$ %d\n", pibB01);
     printf("Número de pontos turisticos: %d\n\n\n", pontoB01);
-    
+    printf("Densidade populacional: %.2f\n", dpB01);
+    printf("PIB per capta: %.2f\n", pcB01);
        
     printf("Código da carta: %s%d\n", estB, carta2);
     printf("Cidade: %s\n", cidadeB02);
@@ -1152,7 +1238,8 @@ int main(){
     printf("Área em metros quadrados: %.2d\n", areaB02);
     printf("PIB da cidade:R$ %d\n", pibB02);
     printf("Número de pontos turisticos: %d\n\n\n", pontoB02);
-    
+    printf("Densidade populacional: %.2f\n", dpB02);
+    printf("PIB per capta: %.2f\n", pcB02);
 
     printf("Código da carta: %s%d\n", estB, carta3);
     printf("Cidade: %s\n", cidadeB03);
@@ -1160,14 +1247,17 @@ int main(){
     printf("Área em metros quadrados: %.2d m2\n", areaB03);
     printf("PIB da cidade:R$ %d\n", pibB03);
     printf("Número de pontos turisticos: %d\n\n\n", pontoB03);
-    
+    printf("Densidade populacional: %.2f\n", dpB03);
+    printf("PIB per capta: %.2f\n", pcB03);
+
     printf("Código da carta: %s%d\n", estB, carta4);
     printf("Cidade: %s\n", cidadeB04);
     printf("População: %d\n", populacaoB04);
     printf("Área em metros quadrados: %.2d m2\n", areaB04);
     printf("PIB da cidade:R2 %d\n", pibB04);
     printf("Número de pontos turisticos: %d\n\n\n", pontoB04);
-    
+    printf("Densidade populacional: %.2f\n", dpB04);
+    printf("PIB per capta: %.2f\n", pcB04);
     
     printf("Estado: %s\n\n", estadoC);
     
@@ -1177,14 +1267,18 @@ int main(){
     printf("Área em metros quadrados: %.2d m2\n", areaC01);
     printf("PIB da cidade:R$ %d\n", pibC01);
     printf("Número de pontos turisticos: %d\n\n\n", pontoC01);
-    
+    printf("Densidade populacional: %.2f\n", dpC01);
+    printf("PIB per capta: %.2f\n", pcC01);
+
     printf("Código da carta: %s%d\n", estC, carta2);
     printf("Cidade: %s\n", cidadeC02);
     printf("População: %d\n", populacaoC02);
     printf("Área em metros quadrados: %02d m2\n", areaC02);
     printf("PIB da cidade:R$ %d\n", pibC02);
     printf("Número de pontos turisticos: %d\n\n\n", pontoC02);
-    
+    printf("Densidade populacional: %.2f\n", dpD01);
+    printf("PIB per capta: %.2f\n", pcD01);
+
     printf("Código da carta: %s%d\n", estC, carta3);
     printf("Cidade: %s\n", cidadeC03);
     printf("População: %d\n", populacaoC03);
@@ -1198,7 +1292,8 @@ int main(){
     printf("Área em metros quadrados: %.2d m2\n", areaC04);
     printf("PIB da cidade:R$ %d\n", pibC04);
     printf("Número de pontos turisticos: %d\n\n\n", pontoC04);
-        
+    printf("Densidade populacional: %.2f\n", dpC04);
+    printf("PIB per capta: %.2f\n", pcC04);
     
     printf("Estado: %s\n\n", estadoD);
     
@@ -1208,28 +1303,39 @@ int main(){
     printf("Área em metros quadrados: %.2d m2\n", areaD01);
     printf("PIB da cidade:R$ %d\n", pibD01);
     printf("Número de pontos turisticos: %d\n\n\n", pontoD01);
-    
+    printf("Densidade populacional: %.2f\n", dpD01);
+    printf("PIB per capta: %.2f\n", pcD01);
+
+
     printf("Código da carta: %s%d\n", estD, carta2);
     printf("Cidade: %s\n", cidadeD02);
     printf("População: %d\n", populacaoD02);
     printf("Área em metros quadrados: %.2d m2\n", areaD02);
     printf("PIB da cidade: %d\n", pibD02);
     printf("Número de pontos turisticos: %d\n\n\n", pontoD02);
-    
+    printf("Densidade populacional: %.2f\n", dpD02);
+    printf("PIB per capta: %.2f\n", pcD02);
+
+
     printf("Código da carta: %s%d\n", estD, carta3);
     printf("Cidade: %s\n", cidadeD03);
     printf("População: %d\n", populacaoD03);
     printf("Área em metros quadrados: %.2d m2\n", areaD03);
     printf("PIB da cidade:R$ %d\n", pibD03);
     printf("Número de pontos turisticos: %d\n\n\n", pontoD03);
-    
+    printf("Densidade populacional: %.2f\n", dpD03);
+    printf("PIB per capta: %.2f\n", pcD03);
+
+
     printf("Código da carta: %s%d\n", estD, carta4);
     printf("Cidade: %s\n", cidadeD04);
     printf("População: %d\n", populacaoD04);
     printf("Área em metros quadrados: %.2d m2\n", areaD03);
     printf("PIB da cidade:R$ %d\n", pibD04);
     printf("Número de pontos turisticos: %d\n\n\n", pontoD04);
-    
+    printf("Densidade populacional: %.2f\n", dpD04);
+    printf("PIB per capta: %.2f\n", pcD04);
+
     
     printf("Estado: %s\n\n", estadoE);
     
@@ -1239,6 +1345,9 @@ int main(){
     printf("Área em metros quadrados: %.2d m2\n", areaE01);
     printf("PIB da cidade:R$ %d\n", pibE01);
     printf("Número de pontos turisticos: %d\n\n\n", pontoE01);
+    printf("Densidade populacional: %.2f\n", dpE01);
+    printf("PIB per capta: %.2f\n", pcE01);
+
     
     printf("Código da carta: %s%d\n", estE, carta2);
     printf("Cidade: %s\n", cidadeE02);
@@ -1246,6 +1355,8 @@ int main(){
     printf("Área em metros quadrados: %.2d m2\n", areaE02);
     printf("PIB da cidade:R$ %d\n", pibE02);
     printf("Número de pontos turisticos: %d\n\n\n", pontoE02);
+    printf("Densidade populacional: %.2f\n", dpE02);
+    printf("PIB per capta: %.2f\n", pcE02);
     
     printf("Código da carta: %s%d\n", estE, carta3);
     printf("Cidade: %s\n", cidadeE03);
@@ -1253,6 +1364,8 @@ int main(){
     printf("Área em metros quadrados: %.2d m2\n", areaE03);
     printf("PIB da cidade:R$ %d\n", pibE03);
     printf("Número de pontos turisticos: %d\n\n\n", pontoE03);
+    printf("Densidade populacional: %.2f\n", dpC03);
+    printf("PIB per capta: %.2f\n", pcC03);
     
     printf("Código da carta: %s%d\n", estE, carta4);
     printf("Cidade: %s\n", cidadeE04);
@@ -1260,7 +1373,9 @@ int main(){
     printf("Área em metros quadrados: %.2d m2\n", areaE04);
     printf("PIB da cidade:R$ %d\n", pibE04);
     printf("Número de pontos turisticos: %d\n\n\n", pontoE04);
-    
+    printf("Densidade populacional: %.2f\n", dpE04);
+    printf("PIB per capta: %.2f\n", pcE04);
+
     
     printf("Estado: %s\n\n", estadoF);
 
@@ -1270,6 +1385,8 @@ int main(){
     printf("Área em metros quadrados: %.2d m2\n", areaF01);
     printf("PIB da cidade:R$ %d\n", pibF01);
     printf("Número de pontos turisticos: %d\n\n\n", pontoF01);
+    printf("Densidade populacional: %.2f\n", dpF01);
+    printf("PIB per capta: %.2f\n", pcF01);
     
     printf("Código da carta: %s%d\n", estF, carta2);
     printf("Cidade: %s\n", cidadeF02);
@@ -1277,6 +1394,8 @@ int main(){
     printf("Área em metros quadrados: %.2d m2\n", areaF02);
     printf("PIB da cidade:R$ %d\n", pibF02);
     printf("Número de pontos turisticos: %d\n\n\n", pontoF02);
+    printf("Densidade populacional: %.2f\n", dpF02);
+    printf("PIB per capta: %.2f\n", pcF02);
     
     printf("Código da carta: %s%d\n", estF, carta3);
     printf("Cidade: %s\n", cidadeF03);
@@ -1284,6 +1403,8 @@ int main(){
     printf("Área em metros quadrados: %.2d m2\n", areaF03);
     printf("PIB da cidade:R$ %d\n", pibF03);
     printf("Número de pontos turisticos: %d\n\n\n", pontoF03);
+    printf("Densidade populacional: %.2f\n", dpF03);
+    printf("PIB per capta: %.2f\n", pcF03);
     
     printf("Código da carta: %s%d\n", estF, carta4);
     printf("Cidade: %s\n", cidadeF04);
@@ -1291,6 +1412,8 @@ int main(){
     printf("Área em metros quadrados: %.2d m2\n", areaF04);
     printf("PIB da cidade:R$ %d\n", pibF04);
     printf("Número de pontos turisticos: %d\n\n\n", pontoF04);
+    printf("Densidade populacional: %.2f\n", dpF04);
+    printf("PIB per capta: %.2f\n", pcF04);
     
     printf("Estado: %s\n\n", estadoG);
     
@@ -1300,6 +1423,8 @@ int main(){
     printf("Área em metros quadrados: %.2d m2\n", areaG01);
     printf("PIB da cidade:R$ %d\n", pibG01);
     printf("Número de pontos turisticos: %d\n\n\n", pontoG01);
+    printf("Densidade populacional: %.2f\n", dpG01);
+    printf("PIB per capta: %.2f\n", pcG01);
     
     printf("Código da carta: %s%d\n", estG, carta2);
     printf("Cidade: %s\n", cidadeG02);
@@ -1307,6 +1432,8 @@ int main(){
     printf("Área em metros quadrados: %.2d\n", areaG02);
     printf("PIB da cidade:R$ %d\n", pibG02);
     printf("Número de pontos turisticos: %d\n\n\n", pontoG02);
+    printf("Densidade populacional: %.2f\n", dpG02);
+    printf("PIB per capta: %.2f\n", pcG02);
     
     printf("Código da carta: %s%d\n", estG, carta3);
     printf("Cidade: %s\n", cidadeG03);
@@ -1314,6 +1441,8 @@ int main(){
     printf("Área em metros quadrados: %.2d m2\n", areaG03);
     printf("PIB da cidade:R$ %d\n", pibG03);
     printf("Número de pontos turisticos: %d\n\n\n", pontoG03);
+    printf("Densidade populacional: %.2f\n", dpG03);
+    printf("PIB per capta: %.2f\n", pcG03);
     
     printf("Código da carta: %s%d\n", estG, carta4);
     printf("Cidade: %s\n", cidadeG04);
@@ -1321,6 +1450,8 @@ int main(){
     printf("Área em metros quadrados: %.2d m2\n", areaG04);
     printf("PIB da cidade:R$ %d\n", pibG04);
     printf("Número de pontos turisticos: %d\n\n\n", pontoG04);
+    printf("Densidade populacional: %.2f\n", dpG04);
+    printf("PIB per capta: %.2f\n", pcG04);
     
     
     printf("Estado: %s\n\n", estadoH);
@@ -1331,6 +1462,8 @@ int main(){
     printf("Área em metros quadrados: %.2d m2\n", areaH01);
     printf("PIB da cidade:R$ %d\n", pibH01);
     printf("Número de pontos turisticos: %d\n\n\n", pontoH01);
+    printf("Densidade populacional: %.2f\n", dpH01);
+    printf("PIB per capta: %.2f\n", pcH01);
     
     printf("Código da carta: %s%d\n", estH, carta2);
     printf("Cidade: %s\n", cidadeH02);
@@ -1338,6 +1471,8 @@ int main(){
     printf("Área em metros quadrados: %.2d m2\n", areaH02);
     printf("PIB da cidade:R$ %d\n", pibH02);
     printf("Número de pontos turisticos: %d\n\n\n", pontoH02);
+    printf("Densidade populacional: %.2f\n", dpH02);
+    printf("PIB per capta: %.2f\n", pcH02);
     
     printf("Código da carta: %s%d\n", estH, carta3);
     printf("Cidade: %s\n", cidadeH03);
@@ -1345,6 +1480,8 @@ int main(){
     printf("Área em metros quadrados: %.2d m2\n", areaH03);
     printf("PIB da cidade:R$ %d\n", pibH03);
     printf("Número de pontos turisticos: %d\n\n\n", pontoH03);
+    printf("Densidade populacional: %.2f\n", dpH03);
+    printf("PIB per capta: %.2f\n", pcH03);
     
     printf("Código da carta: %s%d\n", estH, carta4);
     printf("Cidade: %s\n", cidadeH04);
@@ -1352,6 +1489,8 @@ int main(){
     printf("Área em metros quadrados: %.2d m2\n", areaH04);
     printf("PIB da cidade:R$ %d\n", pibH04);
     printf("Número de pontos turisticos: %d\n\n\n", pontoH04);
+    printf("Densidade populacional: %.2f\n", dpH04);
+    printf("PIB per capta: %.2f\n", pcH04);
     
    
 
