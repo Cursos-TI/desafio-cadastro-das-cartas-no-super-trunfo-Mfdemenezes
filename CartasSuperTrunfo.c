@@ -1569,7 +1569,7 @@ int main(){
     somaH04 = populacaoH04 + areaH04 + pibH04 + pontoH04;	
 
     
-    print("** Segue as opçoes de nomes das cidades para escolha ** %s\n");
+    printf("** Segue as opçoes de nomes das cidades para escolha ** %s\n");
     printf("%s\n", cidadeA01);
     printf("%s\n", cidadeA02);
     printf("%s\n", cidadeA03);
