@@ -32,6 +32,7 @@ int main(){
 	
     float pcA01, pcA02, pcA03, pcA04, pcB01, pcB02, pcB03, pcB04, pcC01, pcC02, pcC03, pcC04, pcD01, pcD02, pcD03, pcD04, pcE01, pcE02, pcE03, pcE04, pcF01, pcF02, pcF03, pcF04, pcG01, pcG02, pcG03, pcG04, pcH01, pcH02, pcH03, pcH04;
 
+    float somaA01, somaA02, somaA03, somaA04, somaB01, somaB02, somaB03, somaB04, somaC01, somaC02, somaC03, somaC04, somaD01, somaD02, somaD03, somaD04, somaE01, somaE02, somaE03, somaE04, somaF01, somaF02, somaF03, somaF04, somaG01, somaG02, somaG03, somaG04, somaH01, somaH02, somaH03, somaH04;
 
         
     
@@ -45,14 +46,13 @@ int main(){
     printf("Se possivel antes de iniciar essa etapa faça um rascunho com todos os dados para evitar erros de digitação.\n");
     printf("Contendo a escolha de um pais, 8 estados desse pais e 4 cidades de cada estado.\n");
     printf("Para as caracteristicas das cidades tem população, área, PIB, quantidade de pontos turisticos.\n\n");
-
+    
+    printf("- Digite o nome do pais que vamos escolher para esse jogo -\n");
+    
+    fgets(pais, sizeof(pais), stdin);
     //Cadastro estado A
 
-
     printf("Cadastro 1/32\n");
-
-    printf("- Digite o nome do pais que vamos escolher para esse jogo -\n");
-    fgets(pais, sizeof(pais), stdin);
 
     printf("- Digite o nome de um estado do pais escolhido -\n");
     fgets(estadoA, sizeof(estadoA), stdin);
@@ -1167,8 +1167,7 @@ int main(){
     pcH02 = (float) pibH02 / populacaoH02;
     pcH03 = (float) pibH03 / populacaoH03;
     pcH04 = (float) pibH04 / populacaoH04;
-
-   
+  
      
     
        
@@ -1491,8 +1490,131 @@ int main(){
     printf("Número de pontos turisticos: %d\n\n\n", pontoH04);
     printf("Densidade populacional: %.2f\n", dpH04);
     printf("PIB per capta: %.2f\n", pcH04);
+
+
+    dpA01 = populacaoA01 + areaA01 + pibA01 + pontoA01;  
+    dpA02 = populacaoA02 + areaA02 + pibA02 + pontoA02;  
+    dpA03 = populacaoA03 + areaA03 + pibA03 + pontoA03;  
+    dpA04 = populacaoA04 + areaA04 + pibA04 + pontoA04;  
+
+    dpB01 = populacaoB01 + areaB01 + pibB01 + pontoB01;  
+    dpB02 = populacaoB02 + areaB02 + pibB02 + pontoB02;  
+    dpB03 = populacaoB03 + areaB03 + pibB03 + pontoB03;  
+    dpB04 = populacaoB04 + areaB04 + pibB04 + pontoB04;  
+
+    dpC01 = populacaoC01 + areaC01 + pibC01 + pontoC01;  
+    dpC02 = populacaoC02 + areaC02 + pibC02 + pontoC02;  
+    dpC03 = populacaoC03 + areaC03 + pibC03 + pontoC03;  
+    dpC04 = populacaoC04 + areaC04 + pibC04 + pontoC04;  
+
+    dpD01 = populacaoD01 + areaD01 + pibD01 + pontoD01;  
+    dpD02 = populacaoD02 + areaD02 + pibD02 + pontoD02;  
+    dpD03 = populacaoD03 + areaD03 + pibD03 + pontoD03;  
+    dpD04 = populacaoD04 + areaD04 + pibD04 + pontoD04;  
+
+    dpE01 = populacaoE01 + areaE01 + pibE01 + pontoE01;  
+    dpE02 = populacaoE02 + areaE02 + pibE02 + pontoE02;  
+    dpE03 = populacaoE03 + areaE03 + pibE03 + pontoE03;  
+    dpE04 = populacaoE04 + areaE04 + pibE04 + pontoE04;  
+
+    dpF01 = populacaoF01 + areaF01 + pibF01 + pontoF01;  
+    dpF02 = populacaoF02 + areaF02 + pibF02 + pontoF02;  
+    dpF03 = populacaoF03 + areaF03 + pibF03 + pontoF03;  
+    dpF04 = populacaoF04 + areaF04 + pibF04 + pontoF04;  
+
+    dpG01 = populacaoG01 + areaG01 + pibG01 + pontoG01;  
+    dpG02 = populacaoG02 + areaG02 + pibG02 + pontoG02;  
+    dpG03 = populacaoG03 + areaG03 + pibG03 + pontoG03;  
+    dpG04 = populacaoG04 + areaG04 + pibG04 + pontoG04;  
+
+    dpH01 = populacaoH01 + areaH01 + pibH01 + pontoH01;  
+    dpH02 = populacaoH02 + areaH02 + pibH02 + pontoH02;  
+    dpH03 = populacaoH03 + areaH03 + pibH03 + pontoH03;  
+    dpH04 = populacaoH04 + areaH04 + pibH04 + pontoH04;
+
+
+    somaB01 = populacaoB01 + areaB01 + pibB01 + pontoB01;	
+    somaB02 = populacaoB02 + areaB02 + pibB02 + pontoB02; 
+     somaB03 = populacaoB03 + areaB03 + pibB03 + pontoB03; 
+    somaB04 = populacaoB04 + areaB04 + pibB04 + pontoB04; 
+	
+    somaC01 = populacaoC01 + areaC01 + pibC01 + pontoC01; 
+    somaC02 = populacaoC02 + areaC02 + pibC02 + pontoC02; 
+    somaC03 = populacaoC03 + areaC03 + pibC03 + pontoC03; 
+    somaC04 = populacaoC04 + areaC04 + pibC04 + pontoC04; 
+	
+    somaD01 = populacaoD01 + areaD01 + pibD01 + pontoD01; 
+    somaD02 = populacaoD02 + areaD02 + pibD02 + pontoD02; 
+    somaD03 = populacaoD03 + areaD03 + pibD03 + pontoD03; 
+    somaD04 = populacaoD04 + areaD04 + pibD04 + pontoD04; 
+	
+    somaE01 = populacaoE01 + areaE01 + pibE01 + pontoE01; 
+    somaE02 = populacaoE02 + areaE02 + pibE02 + pontoE02; 
+    somaE03 = populacaoE03 + areaE03 + pibE03 + pontoE03; 
+    somaE04 = populacaoE04 + areaE04 + pibE04 + pontoE04; 
+	
+    somaF01 = populacaoF01 + areaF01 + pibF01 + pontoF01; 
+    somaF02 = populacaoF02 + areaF02 + pibF02 + pontoF02; 
+    somaF03 = populacaoF03 + areaF03 + pibF03 + pontoF03; 
+    somaF04 = populacaoF04 + areaF04 + pibF04 + pontoF04; 
+	
+    somaG01 = populacaoG01 + areaG01 + pibG01 + pontoG01; 
+    somaG02 = populacaoG02 + areaG02 + pibG02 + pontoG02; 
+    somaG03 = populacaoG03 + areaG03 + pibG03 + pontoG03; 
+    somaG04 = populacaoG04 + areaG04 + pibG04 + pontoG04; 
+	
+    somaH01 = populacaoH01 + areaH01 + pibH01 + pontoH01; 
+    somaH02 = populacaoH02 + areaH02 + pibH02 + pontoH02; 
+    somaH03 = populacaoH03 + areaH03 + pibH03 + pontoH03; 
+    somaH04 = populacaoH04 + areaH04 + pibH04 + pontoH04;	
+
     
+    print("** Segue as opçoes de nomes das cidades para escolha ** %s\n");
+    printf("%s\n", cidadeA01);
+    printf("%s\n", cidadeA02);
+    printf("%s\n", cidadeA03);
+    printf("%s\n", cidadeA04);
    
+    printf("%s\n", cidadeB01);
+    printf("%s\n", cidadeB02);
+    printf("%s\n", cidadeB03);
+    printf("%s\n", cidadeB04);
+   
+    printf("%s\n", cidadeC01);
+    printf("%s\n", cidadeC02);
+    printf("%s\n", cidadeC03);
+    printf("%s\n", cidadeC04);
+   
+    printf("%s\n", cidadeD01);
+    printf("%s\n", cidadeD02);
+    printf("%s\n", cidadeD03);
+    printf("%s\n", cidadeD04);
+   
+    printf("%s\n", cidadeE01);
+    printf("%s\n", cidadeE02);
+    printf("%s\n", cidadeE03);
+    printf("%s\n", cidadeE04);
+   
+    printf("%s\n", cidadeF01);
+    printf("%s\n", cidadeF02);
+    printf("%s\n", cidadeF03);
+    printf("%s\n", cidadeF04);
+   
+    printf("%s\n", cidadeG01);
+    printf("%s\n", cidadeG02);
+    printf("%s\n", cidadeG03);
+    printf("%s\n", cidadeG04);
+   
+    printf("%s\n", cidadeH01);
+    printf("%s\n", cidadeH02);
+    printf("%s\n", cidadeH03);
+    printf("%s\n", cidadeH04);
+
+  
+
+
+
+
 
 
 
